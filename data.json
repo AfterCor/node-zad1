@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Kacper",
+    "email": "Kacper@gmail.com",
+    "age": 21,
+    "gender": "Mężczyzna"
+  },
+  {
+    "name": "Pati",
+    "email": "pati@gmail.com",
+    "age": 21,
+    "gender": "Mężczyzna"
+  },
+  {
+    "name": "afw",
+    "email": "afw@gmail.com",
+    "age": 21,
+    "gender": "Mężczyzna"
+  }
+]
