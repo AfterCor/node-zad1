@@ -16,5 +16,17 @@
     "email": "afw@gmail.com",
     "age": 21,
     "gender": "Mężczyzna"
+  },
+  {
+    "name": "Pati",
+    "email": "pati@gmail.com",
+    "age": 13,
+    "gender": "Mężczyzna"
+  },
+  {
+    "name": "Kacper",
+    "email": "kacper@gmail.com",
+    "age": 13,
+    "gender": "Kobieta"
   }
 ]

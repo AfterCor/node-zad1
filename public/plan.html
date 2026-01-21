@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zadanie 2 – Plan dnia (studia)</title>
+    <link rel="stylesheet" href="plan.css" />
+</head>
+<body>
+<main class="plan">
+    <header class="plan__header">
+        <div class="plan__header-top">
+            <h1 class="plan__title">Plan dnia – studia</h1>
+            <div class="plan__header-actions">
+                <a class="plan__link" href="/">← Zad1 (formularz)</a>
+                <a class="plan__btn plan__btn--ghost" href="/api/plan/download">Pobierz JSON</a>
+            </div>
+        </div>
+
+        <p class="plan__subtitle">
+            Domyślnie jest 5 przedmiotów. Możesz dodawać kolejne i usuwać wykonane.
+        </p>
+    </header>
+
+    <section class="plan__card">
+        <form class="plan__form" id="planForm" autocomplete="off">
+            <div class="plan__field">
+                <label class="plan__label" for="name">Nazwa przedmiotu</label>
+                <input class="plan__input" id="name" name="name" type="text" placeholder="np. Algebra liniowa" required />
+            </div>
+
+            <div class="plan__field">
+                <label class="plan__label" for="durationMinutes">Czas trwania (min)</label>
+                <input class="plan__input" id="durationMinutes" name="durationMinutes" type="number" min="1" step="1" placeholder="np. 90" required />
+            </div>
+
+            <button class="plan__btn plan__btn--primary" type="submit">Dodaj</button>
+        </form>
+
+        <div class="plan__stats">
+            <div class="plan__stat">
+                <span class="plan__stat-label">Liczba przedmiotów:</span>
+                <span class="plan__stat-value" id="statCount">0</span>
+            </div>
+            <div class="plan__stat">
+                <span class="plan__stat-label">Łączny czas:</span>
+                <span class="plan__stat-value" id="statTotal">0 min</span>
+            </div>
+        </div>
+
+        <div class="plan__messages" id="msg"></div>
+
+        <ul class="plan__list" id="planList" aria-label="Lista przedmiotów"></ul>
+
+        <footer class="plan__footer">
+        <span class="plan__hint">
+          Dane zapisują się do <code>plan.json</code> po każdej zmianie.
+        </span>
+        </footer>
+    </section>
+</main>
+
+<script src="plan.js"></script>
+</body>
+</html>
